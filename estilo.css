@@ -128,14 +128,19 @@ body {
 .blocos {
   display: flex;
   justify-content: space-around;
-  gap: 30px;
-  padding: 30px;
+  gap: 40px;
+  padding: 50px 30px;
   margin-bottom: 30px;
 }
 .bloco-esquerdo {
   max-width: 350px;
   height: auto;
   margin: 40px;
+}
+.bloco-direiro{
+  max-width: 630px;
+  height: auto;
+  
 }
 
 
