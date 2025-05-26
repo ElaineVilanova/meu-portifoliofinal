@@ -29,7 +29,7 @@ body {
   justify-content: center;
   padding: 40px 20px;
   margin: 0 auto;
-  background-image: url(img/foto3.jpg);
+  background-image: url(img/foto2.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   
@@ -98,6 +98,7 @@ body {
   line-height: 34px;
   letter-spacing: 0px;
   margin-bottom: 40px;
+  text-align: justify;
 
 }
 .texto1 h3{
@@ -171,6 +172,11 @@ body {
   margin-bottom: 10px;
   line-height: 24px;
 }
+.content ul{
+  list-style: none;
+  margin-bottom: 10px;
+  line-height: 24px;
+}
 
 
 .content p {
@@ -208,7 +214,7 @@ body {
 .destaque ul{
   color: var(--colorblack);
   letter-spacing: 2px;
-  
+   
 }
 
 .destaque1 {
