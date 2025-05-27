@@ -126,21 +126,29 @@ body {
 
 /* BLOCOS PRINCIPAIS */
 .blocos {
+  
   display: flex;
   justify-content: space-around;
   gap: 40px;
-  padding: 50px 30px;
+  padding: 50px;
   margin-bottom: 30px;
 }
+
 .bloco-esquerdo {
   max-width: 350px;
   height: auto;
   margin: 40px;
+
 }
-.bloco-direiro{
-  max-width: 630px;
+.bloco-direita{
+  max-width: 635px;
   height: auto;
-  
+   
+}
+
+
+.blocos .container{
+  align-items: start;
 }
 
 
@@ -157,7 +165,7 @@ body {
 .content, .content1, .content2, .content3 {
   
   font-weight: 400;
-  font-size: 18px;
+  font-size: 20px;
   line-height: 30px;
   letter-spacing: 0px;
   margin-bottom: 30px;
@@ -234,6 +242,51 @@ body {
   letter-spacing: 0px;
   text-align: right;
 }
+/* PORTFÓLIO */
+.container-cards {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.card {
+  
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  width: 300px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.card img {
+  width: 100%;
+  display: block;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.botao-portfolio {
+  display: inline-block;
+  margin: 15px;
+  padding: 8px; 
+  text-decoration: none;
+  background-color: var(--colorblue);
+  transition: background-color 0.3s;
+  border-radius: 10px;
+  color: #fff;
+}
+
+.botao-portfolio:hover {
+  background-color: var(--colorblack);
+  color: var(--colorblue);
+  
+}
+
+
 
 /* RODAPÉ */
 
@@ -260,6 +313,12 @@ line-height: 70px;
 letter-spacing: -1.14px;
 text-align: center;
 }
+.rodape a{
+  color: var(--colorblue);
+  font-size: 28px;
+  text-decoration: none;
+  margin-bottom: 10px;
+}
 .rodape p{
 color:var(--colorblue);
 font-weight: 900;
@@ -269,6 +328,71 @@ letter-spacing: 0px;
 text-align: center;
 
 }
+/* REDES SOCIAIS */
+.lista {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 50px;
+  flex-wrap: wrap;
+}
+
+.lista div {
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.lista div:hover {
+  transform: scale(1.05);
+}
+
+.lista img {
+  width: 25.11px;
+  height: 25.11px;
+  border-radius: 50%;
+  transition: 0.4s ease;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  cursor: pointer;
+  object-fit: cover;
+}
+
+.lista div:hover img {
+  filter: brightness(0.7) sepia(1) hue-rotate(180deg);
+  
+}
+
+.lista a.rede-social {
+  display: block;
+  margin-top: 10px;  
+  color: var(--colorblue);
+  padding: 4px 8px;
+  border-radius: 24px;
+  text-decoration: none;
+  font-weight: 400;
+  transition: background-color 0.3s;
+}
+
+.lista a.rede-social:hover {
+  background-color: blue;
+  color: #fff;
+}
+
+/* FOOTER */
+.footer {
+  padding: 30px 20px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
+  color: var(--colorblue);
+  height: 547px;
+}
+
+.footer .rodape h2 {
+  margin-bottom: 10px;
+}
+
 
 /* RESPONSIVIDADE BÁSICA */
 @media (max-width: 1220px) {
@@ -321,14 +445,13 @@ text-align: center;
     
   }
 
-.bloco-direito {
+.bloco-direita {
     max-width: 100%;
     align-self: flex-start;
     text-align: left;
     margin: 20px 0;
     flex-direction: column-reverse;
-    order: 1;
-    
+    order: -1;    
   }
 
    .content,
